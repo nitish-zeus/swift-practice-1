@@ -107,32 +107,53 @@
                                     <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9D-bA-fpf" customClass="BorderButton" customModule="SwiftPractice1" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.40160101232394368" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
                                         <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="OHR-X9-WQs" eventType="touchUpInside" id="FTr-2Y-IBd"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.85000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXk-2m-RdK" customClass="BorderButton" customModule="SwiftPractice1" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="77.000000000000028" width="375" height="47"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.4016010123" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
                                         <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="OHR-X9-WQs" eventType="touchUpInside" id="fZA-O6-pjs"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.85000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNf-Vt-g9M" customClass="BorderButton" customModule="SwiftPractice1" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="154.00000000000003" width="375" height="47"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.4016010123" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
                                         <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                         <state key="normal" title="Co ed">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="OHR-X9-WQs" eventType="touchUpInside" id="31i-K6-hat"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" alpha="0.85000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qe2-n9-VgJ" customClass="BorderButton" customModule="SwiftPractice1" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.85000002384185791" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qe2-n9-VgJ" customClass="BorderButton" customModule="SwiftPractice1" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="698" width="375" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.4016010123" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="a2Q-8k-2iE"/>
                                 </constraints>
@@ -182,6 +203,7 @@
                         <viewLayoutGuide key="safeArea" id="yR1-df-Kcy"/>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="qe2-n9-VgJ" id="NcC-rE-XkF"/>
                         <segue destination="6zJ-zN-nAw" kind="show" identifier="skillVCSegue" id="GdY-CD-Il2"/>
                     </connections>
                 </viewController>
