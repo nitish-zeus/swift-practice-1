@@ -141,7 +141,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="6zJ-zN-nAw" kind="show" id="kee-53-Ve9"/>
+                                    <action selector="onNextTapped:" destination="OHR-X9-WQs" eventType="touchUpInside" id="9vN-ip-mg4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E01-o4-QUq">
@@ -181,16 +181,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yR1-df-Kcy"/>
                     </view>
+                    <connections>
+                        <segue destination="6zJ-zN-nAw" kind="show" identifier="skillVCSegue" id="GdY-CD-Il2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uqQ-5Q-Nxv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="gmt-bu-7Qm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-423.19999999999999" y="-91.625615763546804"/>
         </scene>
-        <!--SkillVC-->
+        <!--View Controller-->
         <scene sceneID="z65-q0-Tj0">
             <objects>
-                <viewController id="6zJ-zN-nAw" customClass="SkillVC" customModule="SwiftPractice1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6zJ-zN-nAw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NAg-Um-Zf0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
